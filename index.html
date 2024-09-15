@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajit Kadam Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/142bfa9c15.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <span class="logo-s">@jit.</span>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li class="nav-cv"><a href="https://drive.google.com/uc?export=download&id=1RvsZJmsn6OrBIoZjIg8E2STu2-TquBG5" download class="nav-btn nav-btn2 nav-btn2-m">Download CV</a></li>
+                    <i class="fa solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="flex-main main-m">
+                <div class="header-text" class="wrapper">
+                    <p> Hi, I am</p>
+                    <h1>Ajit Kadam</h1>
+                    <span id="multitex"></span><br>
+                    <p>From Pune, India</p>
+                </div>
+                <div class="main-img mobi-main-img">
+                    <img src="./images/Profile-img.png" class="mimg simg" alt="profile">
+                </div>
+            </div>
+
+
+        </div>
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#multitex', {
+                strings: ['Full Stack Web Developer', 'React JS Developer', 'Next JS Developer', 'Node JS Developer'],
+                typeSpeed: 50,
+                loop: true,
+                backSpeed: 50,
+                startDelay: 1000,
+                backDelay: 1000,
+            });
+        </script>
+    </div>
+    </div>
+
+    <!-- --------About--------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <div class="spline"><canvas id="canvas3d"></canvas>
+                        <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+                        <script type="importmap">
+                          {
+                            "imports": {
+                              "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.440/build/runtime.js"
+                            }
+                          }
+                        </script>
+                        <script type="module" src="./src/main.js"></script>
+                    </div>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="about-mi">Final-year Computer Science student at MIT College of Engineering, Barshi.
+                        Strong in design and
+                        integrationwith intuitive problem-solving skills. Proficient in HTML, CSS, JAVASCRIPT, PYTHON,
+                        JAVA, and MERN STACK. Passionate about implementing and launching new projects. Ability to
+                        translate business requirements into technical solutions. Looking to start the career as an
+                        entry-level software engineer with a reputed firm driven by technology.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                        <p class="tab-links" onclick="opentab('experience')">EXPERIENCE</p>
+                        <p class="tab-links" onclick="opentab('education')">EDUCATION</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <div class="service-content">
+                            <ul class="service-table">
+                                <li class="col-md-3 col-sm-6 skill-flex">
+                                    <img src="./images/css-logo.png" style="filter: invert(0);">
+                                    <div class="single-service wow slideInUp p-12"
+                                        style="visibility: visible; animation-name: slideInUp;">
+                                        <!--<span class="fa fa-edit service-icon"></span>-->
+                                        <h4 class="service-title">UX Design</h4>
+                                        <p>Designing some really cool stuff since 2013, Still beautifying Internet!</p>
+                                    </div>
+                                </li>
+                                <li class="col-md-3 col-sm-6 skill-flex">
+                                    <img src="./images/JavaScript -logo.png" style="filter: invert(0);">
+                                    <div class="single-service wow slideInUp"
+                                        style="visibility: visible; animation-name: slideInUp;">
+                                        <!--<span class="fa fa-sort-amount-asc service-icon"></span>-->
+                                        <h4 class="service-title">JavaScript</h4>
+                                        <p>Simplest, coolest and my personal favourite since I've first printed "Hello
+                                            World" </p>
+                                    </div>
+                                </li>
+                                <li class="col-md-3 col-sm-6 skill-flex">
+                                    <img src="./images/React-new.png" style="filter: invert(0);">
+                                    <div class="single-service wow slideInUp"
+                                        style="visibility: visible; animation-name: slideInUp;">
+                                        <!--<span class="fa fa-map-o service-icon"></span>-->
+                                        <h4 class="service-title">React JS</h4>
+                                        <p>Using most advance JS Framework for the coolest web and hybrid apps</p>
+                                    </div>
+                                </li>
+                                <li class="col-md-3 col-sm-6 skill-flex">
+                                    <img src="./images/Node-logo.png" style="filter: invert(0);">
+                                    <div class="single-service wow slideInUp"
+                                        style="visibility: visible; animation-name: slideInUp;">
+                                        <!--<span class="fa fa-rocket service-icon"></span>-->
+                                        <h4 class="service-title">Node JS</h4>
+                                        <p>Manipulating my DOM and giving that extra Special features to my web pages.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li class="col-md-3 col-sm-6 skill-flex">
+                                    <img src="./images/Html-logo.png" style="filter: invert(0);">
+                                    <div class="single-service wow slideInUp"
+                                        style="visibility: visible; animation-name: slideInUp;">
+                                        <!--<span class="fa fa-car service-icon"></span>-->
+                                        <h4 class="service-title">HTML</h4>
+                                        <p>Backbone of every thing I create on web. PS. I Love &lt;Tags&gt;</p>
+                                    </div>
+                                </li>
+                                <li class="col-md-3 col-sm-6 skill-flex">
+                                    <img src="./images/java-logo.png" style="filter: invert(0);">
+                                    <div class="single-service wow slideInUp"
+                                        style="visibility: visible; animation-name: slideInUp;">
+                                        <!--<span class="fa fa-bank service-icon"></span>-->
+                                        <h4 class="service-title">Java</h4>
+                                        <p>Using This Givimg Power to my Java Application.</p>
+                                    </div>
+                                </li>
+                                <li class="col-md-3 col-sm-6 skill-flex">
+                                    <img src="./images/Paython-logo.png" style="width: 55px; filter: invert(0);">
+                                    <div class="single-service wow slideInUp"
+                                        style="visibility: visible; animation-name: slideInUp;">
+                                        <!--<span class="fa fa-user-secret service-icon"></span>-->
+                                        <h4 class="service-title">Python</h4>
+                                        <p>Next Gen language - making my and other dev's life Smooth </p>
+                                    </div>
+                                </li>
+                                <li class="col-md-3 col-sm-6 skill-flex">
+                                    <img src="./images/typescript-logo.png" style="width: 55px; filter: invert(0);">
+                                    <div class="single-service wow slideInUp"
+                                        style="visibility: visible; animation-name: slideInUp;">
+                                        <!--<span class="fa fa-support service-icon"></span>-->
+                                        <h4 class="service-title">Typescript</h4>
+                                        <p>Strict typing my JavaScript code to make it less error-prone</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <div class="service-content" ></div>
+                        <ul class="service-table">
+                            <li class="skill-flex">
+                                <img src="./images/Gao-tek-logo.jpeg" width="80px" style="filter: invert(0);">
+                                <div class="single-service wow slideInUp p-12"
+                                    style="visibility: visible; animation-name: slideInUp;">
+                                    <!--<span class="fa fa-edit service-icon"></span>-->
+                                    <h4 class="service-title">GAOTek Inc. - Digital Marketing Intern (SEO)</h4>
+                                    <h5>December 2023 – March 2024 | Remote</h5>
+                                    <p>Implemented SEO strategies to enhance the company's online presence, driving
+                                        increased organic traffic.
+                                        Conducted keyword research and on-page SEO optimization to improve site ranking
+                                        on search engines.
+                                        Analyzed website performance using tools like Google Analytics, identifying
+                                        areas for optimization.</p>
+                                </div>
+                            </li>
+                            <li class="skill-flex">
+                                <img src="./images/bharat_intern_logo.jpeg" width="80px" style="filter: invert(0);">
+                                <div class="single-service wow slideInUp p-12"
+                                    style="visibility: visible; animation-name: slideInUp;">
+                                    <!--<span class="fa fa-edit service-icon"></span>-->
+                                    <h4 class="service-title">Bharat Intern - Full-Stack Development Intern</h4>
+                                    <h5>September 2023 – October 2023 | Remote</h5>
+                                    <p>Developed and maintained web applications using modern front-end and back-end
+                                        technologies.
+                                        Collaborated with the team to integrate APIs and enhance overall user
+                                        experience.
+                                        Gained experience with frameworks such as React.js and Node.js to build
+                                        responsive, dynamic applications.
+
+                                        <strong>Key Skills:</strong> Full-Stack Development, React.js, Node.js, API
+                                        Integration
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-contents" id="education">
+                    <div class="education-content"></div>
+                    <ul class="education-table">
+                        <li class="skill-flex-e skill-flex-m">
+                            <img src="./images/Mit-logo.jpeg" width="80px" style="filter: invert(0);">
+                            <div class="single-education wow slideInUp p-12"
+                                style="visibility: visible; animation-name: slideInUp;">
+                                <h4 class="education-title">B.Tech (Computer Science & Engineering)</h4>
+                                <p>Pursuing B.Tech at MIT CORER, Maharashtra.</p>
+                                <p><strong>Year:</strong> 2022 - 2025</p>
+                                <p><strong>CGPA:</strong> 7.8 (Semester 6)</p>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6 skill-flex-e skill-flex-m">
+                            <img src="./images/Trinity-logo.png" width="80px" style="filter: invert(0);">
+                            <div class="single-education wow slideInUp"
+                                style="visibility: visible; animation-name: slideInUp;">
+                                <h4 class="education-title">Diploma (Computer Engineering)</h4>
+                                <p>Completed diploma at Trinity Polytechnics, Pune, Maharashtra.</p>
+                                <p><strong>Year:</strong> 2020 - 2022</p>
+                                <p><strong>Percentage:</strong> 80.10%</p>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6 skill-flex-e skill-flex-m">
+                            <img src="./images/SMB-logo.jpg" width="80px" style="filter: invert(0);">
+                            <div class="single-education wow slideInUp"
+                                style="visibility: visible; animation-name: slideInUp;">
+                                <h4 class="education-title">Higher Secondary (HSC)</h4>
+                                <p>Completed HSC at Shivaji Mahavidyalay, Barshi, Solapur, Maharashtra.</p>
+                                <p><strong>Year:</strong> 2018 - 2020</p>
+                                <p><strong>Percentage:</strong> 50.10%</p>
+                            </div>
+                        </li>
+                        <li class="col-md-3 col-sm-6 skill-flex-e skill-flex-m">
+                            <img src="./images/SSC-LOGO.svg" width="80px" style="filter: invert(0);">
+                            <div class="single-education wow slideInUp"
+                                style="visibility: visible; animation-name: slideInUp;">
+                                <h4 class="education-title">Secondary School (SSC)</h4>
+                                <p>Completed SSC at V Patil Sec School, Chinchpur (BK), Maharashtra.</p>
+                                <p><strong>Year:</strong> 2017 - 2018</p>
+                                <p><strong>Percentage:</strong> 70.80%</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- ------------services------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>
+                        Web Development </h2>
+                    <p>Develop responsive and dynamic web applications using technologies like HTML, CSS, JavaScript, React.js, and Node.js.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Mobile App Development</h2>
+                    <p>Build cross-platform mobile applications using React Native for a seamless user experience on both Android and iOS.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Machine Learning & AI Solutions</h2>
+                    <p>Provide machine learning models and AI-based solutions for predictive analytics and automation.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------Portfolio------------------ -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/Project1.png">
+                    <div class="layer">
+                        <h3>Dcc Web Application</h3>
+                        <p>Developed a DCC dynamic web application using ReactJS and NodeJS. This web solution enables seamless communication between admins, managers, site engineers, andclients.</p>
+                        <a href="https://dev-ajitkadam.github.io/dcc-frontend/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Project2new.png">
+                    <div class="layer">
+                        <h3>Girman Tech App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            </p>
+                        <a href="https://girmantech-project.vercel.app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/Project3new.png">
+                    <div class="layer">
+                        <h3>
+                            Glassmorphic SignUp Page</h3>
+                        <p>The Page Achive 
+                            Glassmorphic Effect using Css3 </p>
+                        <a href="https://dev-ajitkadam.github.io/Glassmorphic-SignUp-Page/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="/" class="btn">See more</a>
+        </div>
+
+    </div>
+
+    <!-- ----------------Contact Section------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>kadamajit2002@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 9309595586</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ajit-kadam-b542a6219/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/dev-ajitkadam/"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.facebook.com/ajit.kadam.3139241?sfnsn=wiwspwa&mibextid=RUbZ1f/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/ajit_kadam41?utm_source=qr&igsh=MnFhbGNkZWZiM3l5/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/uc?export=download&id=1RvsZJmsn6OrBIoZjIg8E2STu2-TquBG5" download class="btn btn2">Download CV</a>
+                </div>
+
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" id="6" placeholder="Your Message" cols="20" rows="5"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="Copyright">
+            <p>Copyright @2024-25 Made with <i class="fa-brands fa-gratipay"></i> by dev-ajitkadam</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzIug18MnU4eTo0VksAtznoQyeZEh59_uX3q3Tdc32x9ORJqU9VFR2BTm8zeVqTYgg5Lw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
